@@ -24,10 +24,10 @@ public class OverlOverr extends Charges
 		return i+j;
 	}
 
-	public void deleteCharges(String s) throws ArithmeticException 
-	{
-		  System.out.println("in sub class delete charges"); 
-	}
+	/*
+	 * public void deleteCharges(String s) throws ArithmeticException {
+	 * System.out.println("in sub class delete charges"); }
+	 */
 	 
 	public static void main(String args[])
 	{

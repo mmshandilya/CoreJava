@@ -17,8 +17,8 @@ class B extends A
 	}
 	public B(int i)
 	{
-		super();//default no need to type
-		//super(i);
+		//super();//default no need to type
+		super(i);
 		System.out.println("In B Int");
 	}
 }

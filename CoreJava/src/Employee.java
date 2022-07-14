@@ -55,7 +55,8 @@ public class Employee {
 		 * list.stream().forEach(person->{ if(person.salary>10000) {
 		 * System.out.println(""+person.name); } });
 		 */
-		//list.stream().filter(person->person.getSalary()>10000).forEach(person->System.out.println(person.getName()));
+		list.stream().filter(person->person.getSalary()>10000).forEach(person->System.out.println(person.getName()));
+		
 		Map <Integer,Employee> map=new HashMap();
 		map.put(10, new Employee(1,"Mahesh",10000));
 		map.put(10, new Employee(1,"Mahesh",10000));
