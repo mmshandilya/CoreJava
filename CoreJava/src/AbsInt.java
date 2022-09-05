@@ -3,29 +3,34 @@ abstract class GST
 	int ab=0;
 	abstract void GSTReceivable();
 	abstract void GSTPayable();
-	String getStateName(String state)
+	public String getStateName(String state)
 	{
 		return state;
 	}
 	int i;
-	GST()//Constructor
+	GST()//Constructor Optional
 	{
 		System.out.println("In Abstract Constructor");
 	}
 }
 //abstract interface PartyName
+@FunctionalInterface
 interface PartyName
 {
 	int abc=1;
 	abstract void getGSTNO(String gst);
-	void getStateName();
+	//void getStateName();
 	default String EntityName(String s)
+	{
+		return s;
+	}
+	default String EntityName1(String s)
 	{
 		return s;
 	}
 	public static String show()
 	{
-		return "";
+		return "In Show";
 	}
 }
 interface BillingPartyName
@@ -53,16 +58,19 @@ public class AbsInt extends GST implements PartyName,BillingPartyName
 	public static void main(String args[])
 	{
 		AbsInt a=new AbsInt();
+		System.out.println("After Object creation");
 		a.ab=5;
 		a.GSTReceivable();
 		//a.GSTPayable();
 		a.getGSTNO("GSTIN27");
 		a.getStateName();
-		String s=a.EntityName("MH");
+		String s=a.EntityName("MH");//calling default method
 		
-		//a.abc=10; can not assgin value for interface as its Final
+		//a.abc=10; //can not assgin value for interface as its Final
 		System.out.println(""+s+": "+abc);
 		System.out.println("Ab Value :"+a.ab);
-				
+		
+		String s1=PartyName.show();//calling static method
+		System.out.println(""+s1);
 	}	
 }

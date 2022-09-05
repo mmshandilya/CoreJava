@@ -18,6 +18,10 @@ public class LambdaExample {
 	MyInter inter=(a,b)->a+b;
 	
 	System.out.println(inter.sum(2, 3));
+	
+	String str="Hello";
+	System.out.println((str.contains("i")));
+	
 	}
 
 }

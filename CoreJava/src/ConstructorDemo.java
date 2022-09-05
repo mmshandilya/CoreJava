@@ -18,7 +18,7 @@ class B extends A
 	public B(int i)
 	{
 		//super();//default no need to type
-		super(i);
+		//super(i);
 		System.out.println("In B Int");
 	}
 }
@@ -26,7 +26,7 @@ public class ConstructorDemo {
 	
 	public static void main(String args[])
 	{
-		//A obj=new A();
+		A obj=new A();
 		B obj1=new B(5);
 	}
 

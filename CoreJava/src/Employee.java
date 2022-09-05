@@ -34,11 +34,12 @@ public class Employee {
 	{
 		
 	}
-	public Employee(int id,String name,int salary)
-	{
-		this.id=id;
-		this.name=name;
-		this.salary=salary;
+	
+	public Employee(int id, String name, int salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
 	}
 	public static void main(String args[])
 	{
@@ -56,14 +57,16 @@ public class Employee {
 		 * System.out.println(""+person.name); } });
 		 */
 		list.stream().filter(person->person.getSalary()>10000).forEach(person->System.out.println(person.getName()));
-		
+		list.stream().filter(p->p.getSalary()>5000).forEach(p->System.out.println(p.getName()));
 		Map <Integer,Employee> map=new HashMap();
 		map.put(10, new Employee(1,"Mahesh",10000));
 		map.put(10, new Employee(1,"Mahesh",10000));
 		map.put(20, new Employee(2,"Praveen",20000));
 		map.put(30, new Employee(3,"Sharad",30000));
+		map.put(null, new Employee(4,"MM",3444));
+		map.put(null, new Employee(4,"MS",3444));
 		
-		//map.forEach((key,value)->System.out.println(""+value.getName()+" : "+value.getSalary()));
+		map.forEach((key,value)->System.out.println(""+value.getName()+" : "+value.getSalary()));
 			
 		Set<Employee> set=new HashSet<>();
 		

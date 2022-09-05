@@ -41,7 +41,7 @@ public class CustomerMaster {
 		CustomerMaster c=new CustomerMaster();
 		//c.setCutomername("Mahesh");
 		System.out.println(""+c.getCutomername());
-
+		
 	}
 
 }
