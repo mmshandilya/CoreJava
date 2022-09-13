@@ -13,7 +13,8 @@ public class FindMax {
 		Integer min=arr.stream().min((i,j)->i.compareTo(j)).get();
 		System.out.println(""+min);
 		
-		arr.stream().max((i,j)->i.compareTo(j)).get();	
+		
+		
 	}
 
 }
