@@ -30,7 +30,7 @@ public class PolyMDemo extends Parent
 		System.out.println("In Child Int: "+i);
 	}
 	public static void main(String[] args) {
-		Parent p=new PolyMDemo();
+		Parent p=new Parent();
 		p.show();
 		p.show("Mahesh");
 		p.show(0);
