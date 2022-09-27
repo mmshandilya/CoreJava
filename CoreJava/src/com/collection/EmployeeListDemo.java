@@ -60,7 +60,7 @@ public class EmployeeListDemo {
 		List sortlist=list.stream()
 				.sorted((o1,o2)-> (int)(o2.getSalary()-o1.getSalary()))
 				.limit(2)
-				.skip(1)
+				//.skip(1)
 				.collect(Collectors.toList());
 		
 		System.out.println("Sort List: "+sortlist);

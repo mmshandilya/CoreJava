@@ -41,7 +41,7 @@ public class CollectionArrayPractise {
 			}	
 		}	
 		//map.forEach((key,value)->System.out.println("Count: "+key+" Value: "+value));
-		map.entrySet().stream().forEach(s->System.out.println(s));
+		map.values().stream().forEach(s->System.out.println(s));
 		
 	}
 
