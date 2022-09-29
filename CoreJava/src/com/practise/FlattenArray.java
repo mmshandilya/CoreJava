@@ -3,6 +3,7 @@ package com.practise;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class FlattenArray 
 {
@@ -32,7 +33,9 @@ public class FlattenArray
 	            }
 	            System.out.println("Flattened Array "+flatList);
 	        }
+	        
 	        return flatList.toArray(new Integer[flatList.size()]);
+	        
 		}    
 		
 	
