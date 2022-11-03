@@ -13,7 +13,7 @@ public class SortExample {
 		System.out.println("Comparable: "+std);
 		Collections.sort(std,new IdComparator());//Comparator
 		
-		System.out.println(" Comparator: "+std);
+		System.out.println("Comparator: "+std);
 	}
 
 }
